@@ -27,14 +27,49 @@ body {
   color: #005ba7;
   margin: 3px;
   line-height: normal;
+  width: 250px;
+  font-size: 1.2rem;
 }
 .Poster__top .green-text {
   color: green;
 }
 .Poster__text {
-  font-size: smaller;
+  font-size: 0.6rem;
   margin-top: 0;
   margin-bottom: 0;
+  width: 250px;
+}
+
+.Poster__moon-text {
+  display: flex;
+}
+
+.Poster__moon-text img {
+  width: 150px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+  animation: moonSpin 8s infinite;
+}
+
+.Poster__moon-text p {
+  margin: 0;
+  color: white;
+  font-size: small;
+}
+
+.Poster__moon-desc {
+  margin-top: 60px;
+}
+.Poster__car-and-text{
+  display: fleX;
+  justify-content: flex-start;
+}
+.Poster__trip-text{
+  width: 150px; /* Adjust width as necessary */
+  margin-top: 40px;
+}
+.Poster__car{
+  width: 80px;
 }
 
 .footer {
@@ -96,5 +131,16 @@ body {
 
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@keyframes moonSpin {
+  0% {
+    transform: rotate(0deg) translateX(50px);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: rotate(360deg) translateX(50px);
+    transform-origin: 50% 50%;
   }
 }
