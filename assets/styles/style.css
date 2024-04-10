@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "marydale_bold";
+  src: url("../fonts/Marydale-Bold.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  background: grey;
+  font-family: "marydale_bold", sans-serif;
+}
+
+.Poster {
+  background-image: url("../SVG/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 500px;
+  aspect-ratio: 0.71;
+  position: relative;
+  overflow: hidden;
+}
+.Poster__content {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.Poster__top {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #005ba7;
+  margin: 3px;
+  line-height: normal;
+}
+.Poster__top .green-text {
+  color: green;
+}
+.Poster__text {
+  font-size: smaller;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+.footer__white {
+  background-color: white;
+  height: 10px;
+}
+.footer__blue {
+  height: 25px;
+  padding-top: 5px;
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__item-1 {
+  width: 150px;
+  margin-left: 30px;
+  animation: tiltLogo 3s infinite;
+}
+
+.footer__item-2 {
+  font-size: 0.4rem;
+  color: white;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: column;
+}
+
+.footer__item-2 p {
+  margin: 0;
+}
+
+.footer__item-3 {
+  font-size: 0.5rem;
+  margin-right: 30px;
+  color: white;
+}
+
+@keyframes tiltLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  33% {
+    transform: rotate(5deg);
+  }
+
+  66% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
