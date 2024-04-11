@@ -72,6 +72,72 @@ body {
   width: 80px;
 }
 
+/*bottom part*/
+
+.bottom-part {
+  display: flex;
+}
+
+.cat-face {
+  width: 100px;
+  height: 100px;
+  background-color: #ffcc99;
+  border-radius: 50%;
+  position: relative;
+}
+
+.eye {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+}
+
+.eye::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.eye.left {
+  left: 20px;
+}
+
+.eye.right {
+  right: 20px;
+}
+
+.nose {
+  width: 10px;
+  height: 10px;
+  background-color: #cc6666;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 45px;
+}
+
+.tiktok-kids {
+  width: 300px;
+}
+
+/*qr code*/
+
+.QR-code {
+  width: 50px;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+
+/*footer*/
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -81,7 +147,16 @@ body {
 .footer__white {
   background-color: white;
   height: 10px;
+  display: flex;
 }
+
+.footer__white p{
+  font-size: 2.7px;
+  word-wrap: break-word;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
 .footer__blue {
   height: 25px;
   padding-top: 5px;
